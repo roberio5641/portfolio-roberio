@@ -50,14 +50,16 @@ export function Projects() {
       <div className="flex items-center justify-center flex-wrap gap-10">
         {projetos.map((projeto, index) => (
           <div key={index}>
+          {/* 
             <CardProject
-              onClick={() => openModal(projeto.image.src)}
+              onClick={() => openModal(projeto.image)}  // Passa diretamente a string de imagem
               image={projeto.image}
               description={projeto.description}
               languages={projeto.languages}
               repository={projeto.repository}
               deploy={projeto.deploy}
-            />
+            /> 
+          */}
           </div>
         ))}
       </div>
